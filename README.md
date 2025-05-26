@@ -11,7 +11,7 @@ I have [type-1 diabetes](https://www.nhs.uk/conditions/type-1-diabetes/) which m
 
  This works fine but I've always found it a little frustrating to have to unlock my phone and open the app to see the data, especially in the middle of the night.
 
-I'm also aware that you can just buy one of these monitors if you want to cosplay being diabetic but I don't understand why you would want to do that.
+I'm also aware that you can just buy a Freestyle Libre if you want to cosplay being diabetic but I don't understand why you would want to do that.
 
  ## Enter Home Assistant
 
@@ -35,7 +35,7 @@ You'll need:
 * (Optionally) some Lego
 
 Then:
-* Connect the red and black cables to 5v and ground on the esp32, and the yellow and white i2c cables to pins 8 and 9 (presuming you have a C3 super-mini. If you've read this far I presume you know what you're doing and can find the right pins. You'll also need to tweak the values in [`conf.py`](conf/conf.py))
+* Connect the red and black cables to 5v and ground on the esp32, and the yellow and white i2c cables to pins 8 and 9 (presuming you have a C3 super-mini. If you've read this far I presume you know what you're doing and can find the right pins. You'll also need to tweak the values in [`conf.py`](https://github.com/pikesley/bloodstorm/blob/main/st7789v2/conf/conf.py))
 * Create a file in the root of this directory called `secrets.py` that looks like this:
 
 ```python
