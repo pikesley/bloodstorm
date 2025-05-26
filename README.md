@@ -21,7 +21,7 @@ I recently spotted, on a [completely unrelated Mastodon post](https://mastodon.m
 
 ## Tiny screen
 
-I've [written about my adventures with the st7789v2 screen elsewhere](https://sam.pikesley.org/projects/st7789v2-micropython/), and this seemed like the perfect display for this project. I tweaked the client code from that project (the clock thing was only ever a demo, really) to display some [nicer, easier-to-read-in-the-night numbers](st7789v2/conf/font.py), then lashed together a [very noddy API client](blood.py) and here we are.
+I've [written about my adventures with the st7789v2 screen elsewhere](https://sam.pikesley.org/projects/st7789v2-micropython/), and this seemed like the perfect display for this project. I tweaked the client code from that project (the clock thing was only ever a demo, really) to display some [nicer, easier-to-read-in-the-night numbers](https://github.com/pikesley/bloodstorm/blob/main/st7789v2/conf/font.py), then lashed together a [very noddy API client](https://github.com/pikesley/bloodstorm/blob/main/blood.py#L46) and here we are.
 
 ## Using it
 
