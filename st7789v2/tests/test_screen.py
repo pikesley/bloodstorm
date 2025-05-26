@@ -55,65 +55,6 @@ def test_clearing_screen_with_a_different_colour():
     assert st.background_colour == (0, 255, 0)
 
 
-# def test_writing_rle_test():
-#     """Test we can write run-length encoded text."""
-#     mocked_i2c = MagicMock()
-#     st = ST7789v2(i2c=mocked_i2c, background_colour=(255, 0, 0))
-
-#     st.rle = True
-#     st.write_text("1", x=0, y=0, colour=(0, 255, 0), scale_factor=1)
-#     assert mocked_i2c.mock_calls[-1] == call.writeto_mem(
-#         62,
-#         73,
-#         bytearray(
-#             [
-#                 10,
-#                 0,
-#                 4,
-#                 28,
-#                 3,
-#                 0,
-#                 1,
-#                 28,
-#                 4,
-#                 0,
-#                 1,
-#                 28,
-#                 2,
-#                 0,
-#                 1,
-#                 28,
-#                 4,
-#                 0,
-#                 1,
-#                 28,
-#                 2,
-#                 0,
-#                 6,
-#                 28,
-#                 2,
-#                 0,
-#                 1,
-#                 28,
-#                 4,
-#                 0,
-#                 1,
-#                 28,
-#                 2,
-#                 0,
-#                 1,
-#                 28,
-#                 4,
-#                 0,
-#                 1,
-#                 28,
-#                 9,
-#                 0,
-#             ]
-#         ),
-#     )
-
-
 def test_writing_centered_text():
     """Test we can write centered text."""
     mocked_i2c = MagicMock()

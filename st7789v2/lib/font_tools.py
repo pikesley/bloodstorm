@@ -93,7 +93,7 @@ def run_length_encode(data):
     yield current
 
 
-def text_data(text, scale_factor=2, on_colour=255, off_colour=0, rle=False):  # noqa: FBT002
+def text_data(text, scale_factor=2, on_colour=255, off_colour=0):
     """Get some printable data from some ASCII text."""
     characters = [
         scale_bits(make_lists(font[character]), scale_factor) for character in text
@@ -103,7 +103,4 @@ def text_data(text, scale_factor=2, on_colour=255, off_colour=0, rle=False):  # 
     coloured = colour_bits(string, on_colour, off_colour)
     flattened = flatten(coloured)
 
-    if rle:
-        return run_length_encode(flattened)
-
-    return flattened
+    return run_length_encode(flattened)

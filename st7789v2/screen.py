@@ -103,7 +103,7 @@ class ST7789v2:
         self.send_command(0x2B, y_offsets)
 
         command = 0x49
-        data = text_data(text, scale_factor=scale_factor, on_colour=colour, rle=True)
+        data = text_data(text, scale_factor=scale_factor, on_colour=colour)
 
         buffer = []
         for byte in data:
